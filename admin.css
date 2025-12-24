@@ -1,0 +1,128 @@
+
+:root {
+    --kotha-red: #e60000;
+    --pure-white: #ffffff;
+    --bg-light: #f8f9fa;
+    --text-dark: #222;
+    --instructor-bg: #fff3cd;
+    --learner-bg: #d1ecf1;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: var(--kotha-red);
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.admin-header {
+    padding: 40px 0;
+    color: white;
+}
+
+.admin-header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.admin-header p {
+    opacity: 0.9;
+    margin: 5px 0 0;
+}
+
+.management-panel {
+    background: var(--pure-white);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 40px 25px;
+    min-height: 80vh;
+}
+
+.section-title {
+    color: var(--kotha-red);
+    margin-top: 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.user-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .user-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.user-card {
+    background: var(--bg-light);
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-header {
+    margin-bottom: 20px;
+}
+
+.user-name {
+    margin: 0;
+    font-size: 18px;
+}
+
+.role-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.instructor { background: var(--instructor-bg); color: #856404; }
+.learner { background: var(--learner-bg); color: #0c5460; }
+
+/* Admin Buttons Grid */
+.action-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.btn {
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-view { background: #007bff; color: white; grid-column: span 2; }
+.btn-approve { background: #28a745; color: white; }
+.btn-block { background: #ffc107; color: #333; }
+.btn-remove { background: var(--kotha-red); color: white; grid-column: span 2; }
+
+.btn:hover {
+    opacity: 0.8;
+}
