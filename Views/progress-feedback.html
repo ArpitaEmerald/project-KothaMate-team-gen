@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,9 +28,25 @@
                 <td>4 / 6</td>
                 <td>65%</td>
                 <td>
-                    <textarea placeholder="Write feedback here"></textarea>
-                    <button>Submit</button>
-                </td>
+                    <form onsubmit="return validateFeedback(this)">
+
+        <select name="lesson">
+            <option value="">Select Lesson</option>
+            <option value="lesson1">Lesson 1</option>
+            <option value="lesson2">Lesson 2</option>
+            <option value="lesson3">Lesson 3</option>
+        </select>
+
+        <!-- URL format check -->
+        <input type="text" name="resourceUrl" placeholder="Reference URL">
+
+        <!-- Empty field check -->
+        <textarea name="feedbackText" placeholder="Write feedback here"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</td>
+
             </tr>
 
             <tr>
@@ -39,9 +54,26 @@
                 <td>6 / 6</td>
                 <td>100%</td>
                 <td>
-                    <textarea placeholder="Excellent performance"></textarea>
-                    <button>Submit</button>
-                </td>
+    <form onsubmit="return validateFeedback(this)">
+
+        <!-- Required selection -->
+        <select name="lesson">
+            <option value="">Select Lesson</option>
+            <option value="lesson1">Lesson 1</option>
+            <option value="lesson2">Lesson 2</option>
+            <option value="lesson3">Lesson 3</option>
+        </select>
+
+        <!-- URL format check -->
+        <input type="text" name="resourceUrl" placeholder="Reference URL">
+
+        <!-- Empty field check -->
+        <textarea name="feedbackText" placeholder="Write feedback here"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</td>
+
             </tr>
         </table>
     </section>
@@ -65,6 +97,37 @@
             <p>Good progress. Please revise Lesson 3 for better understanding.</p>
         </div>
     </section>
+
+<script>
+function validateFeedback(form) {
+
+    const lesson = form.lesson.value;
+    const url = form.resourceUrl.value.trim();
+    const feedback = form.feedbackText.value.trim();
+
+    if (feedback === "") {
+        alert("Feedback cannot be empty.");
+        return false;
+    }
+
+    if (lesson === "") {
+        alert("Please select a lesson.");
+        return false;
+    }
+
+    if (url !== "") {
+        const urlPattern = /^(https?:\/\/)?([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?$/;
+        if (!urlPattern.test(url)) {
+            alert("Please enter a valid URL.");
+            return false;
+        }
+    }
+
+    alert("Feedback submitted successfully!");
+    return true;
+}
+</script>
+
 
 </body>
 </html>

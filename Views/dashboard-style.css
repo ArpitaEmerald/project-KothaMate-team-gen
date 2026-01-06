@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #b30000;
+}
+
+.header p {
+    font-size: 14px;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    background-color: #fff5f5;
+    border: 1px solid #ffcccc;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Titles */
+h2 {
+    color: #8b0000;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #b30000;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Info Cards */
+.info-card {
+    background-color: #ffffff;
+    border: 1px solid #ffcccc;
+    border-radius: 6px;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+}
+
+.info-card p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b30000;
+}
+
+/* Buttons */
+.action-btn {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #8b0000;
+}
