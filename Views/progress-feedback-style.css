@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    color: #b30000;
+    text-align: center;
+}
+
+h2 {
+    color: #8b0000;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #b30000;
+}
+
+p {
+    font-size: 14px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ffcccc;
+    margin: 30px 0;
+}
+
+/* Card Layout */
+.card {
+    background-color: #fff5f5;
+    border: 1px solid #ffcccc;
+    border-radius: 6px;
+    padding: 20px;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #b30000;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ffcccc;
+    padding: 10px;
+    vertical-align: top;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #cc0000;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+/* Buttons */
+button {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8b0000;
+}
+
+/* Learner Section */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Feedback Box */
+.feedback-box {
+    background-color: #ffffff;
+    border-left: 4px solid #b30000;
+    padding: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learner Progress & Feedback</title>
+    <link rel="stylesheet" href="progress-feedback-style.css">
+</head>
+<body>
+
+    <h1>Learner Progress & Feedback Overview</h1>
+    <p>Monitor learner engagement and provide feedback</p>
+
+    <hr>
+
+    <!-- ================= Instructor View ================= -->
+    <section class="card">
+        <h2>Instructor View</h2>
+
+        <table>
+            <tr>
+                <th>Learner Name</th>
+                <th>Lessons Completed</th>
+                <th>Progress</th>
+                <th>Feedback</th>
+            </tr>
+
+            <tr>
+                <td>Student A</td>
+                <td>4 / 6</td>
+                <td>65%</td>
+                <td>
+                    <textarea placeholder="Write feedback here"></textarea>
+                    <button>Submit</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Student B</td>
+                <td>6 / 6</td>
+                <td>100%</td>
+                <td>
+                    <textarea placeholder="Excellent performance"></textarea>
+                    <button>Submit</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- ================= Learner View ================= -->
+    <section class="card">
+        <h2>Learner View</h2>
+
+        <p><strong>Your Progress:</strong> 65%</p>
+
+        <ul>
+            <li>✔ Lesson 1: Alphabets</li>
+            <li>✔ Lesson 2: Greetings</li>
+            <li>✖ Lesson 3: Daily Conversation</li>
+        </ul>
+
+        <h3>Instructor Feedback</h3>
+        <div class="feedback-box">
+            <p>Good progress. Please revise Lesson 3 for better understanding.</p>
+        </div>
+    </section>
+
+</body>
+</html>
