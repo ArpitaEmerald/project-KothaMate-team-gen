@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KothaMate - Sign Up</title>
+    <link rel="stylesheet" href="signUp.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">KothaMate</div>
+    
+    <p class="description">
+        KothaMate helps you learn, communicate, and connect through spoken, sign, and regional languages. Anytime, anywhere, with a friendly companion by your side.
+    </p>
+
+    <form action="signUp.php" method="POST" class="form-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        
+        <div class="btn-container">
+            <a href="login.php" class="login-link">Login</a>
+            <button type="submit" class="signup-btn">Sign up</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
