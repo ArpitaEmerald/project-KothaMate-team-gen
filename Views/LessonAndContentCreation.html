@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="Lesson_And_Content_Creation_Style.css">
 
 </head>
+
 <body>
 
     <!-- ================= Instructor Section ================= -->
@@ -15,36 +16,41 @@
 
     <h2>Instructor Panel</h2>
 
-    <form>
-        <!-- Lesson Title -->
-        <label for="lessonTitle">Lesson Title:</label><br>
-        <input type="text" id="lessonTitle" name="lessonTitle" placeholder="Enter lesson title"><br><br>
+    <form id="lessonForm" method="post" action="process_lesson.php">
+    <!-- Lesson Title -->
+    <label for="lessonTitle">Lesson Title:</label><br>
+    <input type="text" id="lessonTitle" name="lessonTitle" placeholder="Enter lesson title" required>
+    <span class="error"></span><br><br>
 
-        <!-- Lesson Description -->
-        <label for="lessonDescription">Lesson Description:</label><br>
-        <textarea id="lessonDescription" name="lessonDescription" rows="4" placeholder="Describe the lesson"></textarea><br><br>
+    <!-- Lesson Description -->
+    <label for="lessonDescription">Lesson Description:</label><br>
+    <textarea id="lessonDescription" name="lessonDescription" rows="4" placeholder="Describe the lesson" required></textarea>
+    <span class="error"></span><br><br>
 
-        <!-- Module / Topic -->
-        <label for="moduleName">Module / Topic:</label><br>
-        <input type="text" id="moduleName" name="moduleName" placeholder="e.g. Basic Communication"><br><br>
+    <!-- Module / Topic -->
+    <label for="moduleName">Module / Topic:</label><br>
+    <input type="text" id="moduleName" name="moduleName" placeholder="e.g. Basic Communication" required>
+    <span class="error"></span><br><br>
 
-        <!-- Content Type -->
-        <label for="contentType">Content Type:</label><br>
-        <select id="contentType" name="contentType">
-            <option value="">-- Select Content Type --</option>
-            <option value="text">Text Content</option>
-            <option value="video">Video</option>
-            <option value="sign">Sign Language Video</option>
-        </select><br><br>
+    <!-- Content Type -->
+    <label for="contentType">Content Type:</label><br>
+    <select id="contentType" name="contentType" required>
+        <option value="">-- Select Content Type --</option>
+        <option value="text">Text Content</option>
+        <option value="video">Video</option>
+        <option value="sign">Sign Language Video</option>
+    </select>
+    <span class="error"></span><br><br>
 
-        <!-- Content Link -->
-        <label for="contentLink">Content Link (Video / Resource URL):</label><br>
-        <input type="url" id="contentLink" name="contentLink" placeholder="https://"><br><br>
+    <!-- Content Link -->
+    <label for="contentLink">Content Link (Video / Resource URL):</label><br>
+    <input type="url" id="contentLink" name="contentLink" placeholder="https://" required>
+    <span class="error"></span><br><br>
 
-        <!-- Buttons -->
-        <button type="submit">Add Lesson</button>
-        <button type="reset">Save as Draft</button>
-    </form>
+    <!-- Buttons -->
+    <button type="submit">Add Lesson</button>
+    <button type="reset">Save as Draft</button>
+</form>
 
     <hr>
 
@@ -84,6 +90,6 @@
         <button>View Lesson</button>
         <button>Watch Sign Language Video</button>
     </div>
-
+<script src="lesson_content_creation.js"></script>
 </body>
 </html>
