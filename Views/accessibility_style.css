@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #b30000;
+}
+
+h2 {
+    color: #8b0000;
+    margin-bottom: 10px;
+}
+
+/* Cards */
+.card {
+    background-color: #fff5f5;
+    border: 1px solid #ffcccc;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+
+/* Controls */
+.control-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #8b0000;
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #cc0000;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8b0000;
+}
+
+/* Navigation */
+.nav-buttons button {
+    margin-bottom: 5px;
+}
+
+.breadcrumb {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Tags */
+.tag {
+    background-color: #b30000;
+    color: white;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+/* Video Placeholder */
+.video-box {
+    border: 2px dashed #b30000;
+    padding: 30px;
+    text-align: center;
+    margin-top: 10px;
+    color: #b30000;
+}
+
+/* Preview */
+.preview {
+    margin-top: 10px;
+    font-style: italic;
+}

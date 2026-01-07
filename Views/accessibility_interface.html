@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibility-Focused Learning Interface</title>
+    <link rel="stylesheet" href="accessibility_style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Accessibility Settings</h1>
+        <p>Customize your learning experience for better accessibility</p>
+    </header>
+
+    <!-- ================= Visual Accessibility ================= -->
+    <section class="card">
+        <h2>Visual Accessibility</h2>
+
+        <div class="control-group">
+            <label>Font Size:</label>
+            <button>A-</button>
+            <button>A+</button>
+        </div>
+
+        <div class="control-group">
+            <label>
+                <input type="checkbox">
+                Enable High Contrast Mode
+            </label>
+        </div>
+
+        <div class="control-group">
+            <label for="fontType">Readable Font:</label>
+            <select id="fontType">
+                <option>Default</option>
+                <option>Readable Font</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- ================= Navigation Simplicity ================= -->
+    <section class="card">
+        <h2>Easy Navigation</h2>
+
+        <nav class="nav-buttons">
+            <button>Home</button>
+            <button>Lessons</button>
+            <button>Progress</button>
+        </nav>
+
+        <p class="breadcrumb">Home &gt; Lessons &gt; Basic Communication</p>
+    </section>
+
+    <!-- ================= Sign Language & Captions ================= -->
+    <section class="card">
+        <h2>Sign Language & Captions</h2>
+
+        <p class="tag"> Sign Language Supported</p>
+        <p class="tag">Captions Available</p>
+
+        <div class="video-box">
+            <p>Sign Language Video Player</p>
+        </div>
+    </section>
+
+    <!-- ================= Regional Language ================= -->
+    <section class="card">
+        <h2>Regional Language Support</h2>
+
+        <label for="language">Select Language:</label>
+        <select id="language">
+            <option>English</option>
+            <option>Sylheti</option>
+            <option>Chakma</option>
+        </select>
+
+        <p class="preview">
+            Sample Text Preview in Selected Language
+        </p>
+    </section>
+
+    <!-- ================= Instructor Guidance ================= -->
+    <section class="card">
+        <h2>Instructor Accessibility Guidelines</h2>
+
+        <p>
+            Ensure learning materials include captions, clear visuals,
+            and alternative descriptions for inclusive learning.
+        </p>
+
+        <label for="altText">Alternative Description:</label>
+        <textarea id="altText" rows="3" placeholder="Enter alternative description"></textarea>
+    </section>
+
+</body>
+</html>

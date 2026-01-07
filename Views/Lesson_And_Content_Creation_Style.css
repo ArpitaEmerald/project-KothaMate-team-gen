@@ -1,0 +1,109 @@
+/* ================= Global Styles ================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ================= Headings ================= */
+h1 {
+    color: #b30000;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #b30000;
+    border-bottom: 2px solid #b30000;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #8b0000;
+    margin-top: 20px;
+}
+
+h4 {
+    color: #b30000;
+    margin-bottom: 5px;
+}
+
+/* ================= Paragraphs ================= */
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ================= Form Section ================= */
+form {
+    background-color: #fff5f5;
+    border: 1px solid #ffcccc;
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 600px;
+}
+
+label {
+    font-weight: bold;
+    color: #8b0000;
+}
+
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #cc0000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* ================= Buttons ================= */
+button {
+    background-color: #b30000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #8b0000;
+}
+
+/* ================= Lesson Structure ================= */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* ================= Learner View Cards ================= */
+div {
+    background-color: #fffafa;
+    border: 1px solid #ffcccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    max-width: 600px;
+}
+
+/* ================= Horizontal Line ================= */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ffcccc;
+    margin: 30px 0;
+}
