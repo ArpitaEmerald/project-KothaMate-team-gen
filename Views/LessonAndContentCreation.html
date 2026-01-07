@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson & Content Creation</title>
+    <link rel="stylesheet" href="Lesson_And_Content_Creation_Style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= Instructor Section ================= -->
+    <h1>Lesson & Content Creation</h1>
+    <p>Create and organize learning materials for learners.</p>
+
+    <hr>
+
+    <h2>Instructor Panel</h2>
+
+    <form id="lessonForm" method="post" action="process_lesson.php">
+    <!-- Lesson Title -->
+    <label for="lessonTitle">Lesson Title:</label><br>
+    <input type="text" id="lessonTitle" name="lessonTitle" placeholder="Enter lesson title" required>
+    <span class="error"></span><br><br>
+
+    <!-- Lesson Description -->
+    <label for="lessonDescription">Lesson Description:</label><br>
+    <textarea id="lessonDescription" name="lessonDescription" rows="4" placeholder="Describe the lesson" required></textarea>
+    <span class="error"></span><br><br>
+
+    <!-- Module / Topic -->
+    <label for="moduleName">Module / Topic:</label><br>
+    <input type="text" id="moduleName" name="moduleName" placeholder="e.g. Basic Communication" required>
+    <span class="error"></span><br><br>
+
+    <!-- Content Type -->
+    <label for="contentType">Content Type:</label><br>
+    <select id="contentType" name="contentType" required>
+        <option value="">-- Select Content Type --</option>
+        <option value="text">Text Content</option>
+        <option value="video">Video</option>
+        <option value="sign">Sign Language Video</option>
+    </select>
+    <span class="error"></span><br><br>
+
+    <!-- Content Link -->
+    <label for="contentLink">Content Link (Video / Resource URL):</label><br>
+    <input type="url" id="contentLink" name="contentLink" placeholder="https://" required>
+    <span class="error"></span><br><br>
+
+    <!-- Buttons -->
+    <button type="submit">Add Lesson</button>
+    <button type="reset">Save as Draft</button>
+</form>
+
+    <hr>
+
+    <!-- ================= Lesson Structure Section ================= -->
+    <h2>Lesson Structure</h2>
+
+    <h3>Module 1: Basic Communication</h3>
+    <ul>
+        <li>Lesson 1: Alphabets</li>
+        <li>Lesson 2: Greetings</li>
+    </ul>
+
+    <h3>Module 2: Daily Conversation</h3>
+    <ul>
+        <li>Lesson 3: Common Phrases</li>
+        <li>Lesson 4: Asking Questions</li>
+    </ul>
+
+    <hr>
+
+    <!-- ================= Learner View Section ================= -->
+    <h2>Learner View</h2>
+    <p>Available Lessons</p>
+
+    <div>
+        <h4>Lesson 1: Alphabets</h4>
+        <p>Learn basic alphabets using text and sign language.</p>
+        <button>View Lesson</button>
+        <button>Watch Sign Language Video</button>
+    </div>
+
+    <br>
+
+    <div>
+        <h4>Lesson 2: Greetings</h4>
+        <p>Common greetings used in daily conversation.</p>
+        <button>View Lesson</button>
+        <button>Watch Sign Language Video</button>
+    </div>
+<script src="lesson_content_creation.js"></script>
+</body>
+</html>
