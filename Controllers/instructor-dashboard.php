@@ -6,7 +6,6 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'instructor') {
 }
 ?>
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>Instructor Dashboard</title>
