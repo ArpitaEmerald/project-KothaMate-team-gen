@@ -1,26 +1,40 @@
 <?php
 session_start();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$conn = new mysqli("localhost", "root", "", "your_database_name");
 
-    $email = $_POST['email'];
-    $role  = $_POST['role'];
+if ($conn->connect_error) {
+    die("Database connection failed");
+}
 
-    // Store login info in session
+$email    = $_POST['email'];
+$password = $_POST['password'];
+$role     = $_POST['role'];
+
+$sql = "SELECT * FROM users 
+        WHERE email='$email' 
+        AND password='$password' 
+        AND role='$role'";
+
+$result = $conn->query($sql);
+
+if ($result->num_rows === 1) {
+
     $_SESSION['email'] = $email;
     $_SESSION['role']  = $role;
 
-    // Role-based redirection
     if ($role === "admin") {
         header("Location: admin-dashboard.php");
     } elseif ($role === "instructor") {
         header("Location: instructor-dashboard.php");
-    } elseif ($role === "learner") {
-        header("Location: learner-dashboard.php");
     } else {
-        header("Location: login.html");
+        header("Location: learner-dashboard.php");
     }
-
     exit();
 }
+
+else {
+    echo "Invalid email, password, or role.";
+}
 ?>
+

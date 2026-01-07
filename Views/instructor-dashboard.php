@@ -16,9 +16,21 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'instructor') {
 <p>Welcome, <?php echo $_SESSION['email']; ?></p>
 
 <ul>
-    <li>Create Lessons</li>
-    <li>View Learner Progress</li>
-    <li>Provide Feedback</li>
+    <li>
+        <a href="LessonAndContentCreation.html">
+            Lesson & Content Creation
+        </a>
+    </li>
+    <li>
+        <a href="progress-feedback.html">
+            Learner Progress & Feedback
+        </a>
+    </li>
+    <li>
+        <a href="accessibility-ui.html">
+            Accessibility Interface
+        </a>
+    </li>
 </ul>
 
 <a href="logout.php">Logout</a>
