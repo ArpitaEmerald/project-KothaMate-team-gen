@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KothaMate - Admin Signup</title>
+    <link rel="stylesheet" href="admin_signup.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header-section">
+            <button class="back-btn">← Back</button>
+        </div>
+
+        <div class="signup-card">
+            <h1>Sign up</h1>
+            <p class="subtitle">Let's get you in</p>
+
+            <form action="process_admin_signup.php" method="POST" id="signupForm">
+                <div class="input-group">
+                    <label>First Name</label>
+                    <input type="text" name="full_name" placeholder="First Name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text" name="last_name" placeholder="Last Name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Contact Number</label>
+                    <input type="text" name="contact_number" placeholder="Contact Number" required>
+                </div>
+
+                <div class="gender-section">
+                    <label>Gender</label>
+                    <div class="gender-options">
+                        <label class="gender-btn">
+                            <input type="radio" name="gender" value="Male" required>
+                            <span>Male</span>
+                        </label>
+                        <label class="gender-btn">
+                            <input type="radio" name="gender" value="Female">
+                            <span>Female</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Password" id="pass" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">I agree to the <span>terms and conditions</span></label>
+                </div>
+
+                <button type="submit" class="submit-btn">✓ Sign up</button>
+            </form>
+
+            <div class="footer-links">
+                <a href="login.php" class="login-link">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
