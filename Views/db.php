@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "kothamate_db";
+$db   = "kothamate";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 
