@@ -30,7 +30,6 @@ hr {
     margin: 30px 0;
 }
 
-/* Card Layout */
 .card {
     background-color: #fff5f5;
     border: 1px solid #ffcccc;
@@ -40,7 +39,6 @@ hr {
     margin-bottom: 20px;
 }
 
-/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -67,7 +65,6 @@ textarea {
     margin-bottom: 5px;
 }
 
-/* Buttons */
 button {
     background-color: #b30000;
     color: white;
@@ -81,7 +78,6 @@ button:hover {
     background-color: #8b0000;
 }
 
-/* Learner Section */
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -91,7 +87,6 @@ ul li {
     margin-bottom: 5px;
 }
 
-/* Feedback Box */
 .feedback-box {
     background-color: #ffffff;
     border-left: 4px solid #b30000;
