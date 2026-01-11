@@ -1,40 +1,31 @@
 <?php
 session_start();
-
-$conn = new mysqli("localhost", "root", "", "your_database_name");
-
-if ($conn->connect_error) {
-    die("Database connection failed");
-}
+require "db.php";
 
 $email    = $_POST['email'];
 $password = $_POST['password'];
-$role     = $_POST['role'];
 
-$sql = "SELECT * FROM users 
-        WHERE email='$email' 
-        AND password='$password' 
-        AND role='$role'";
+$query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+$result = mysqli_query($conn, $query);
 
-$result = $conn->query($sql);
+if (mysqli_num_rows($result) === 1) {
 
-if ($result->num_rows === 1) {
+    $user = mysqli_fetch_assoc($result);
 
-    $_SESSION['email'] = $email;
-    $_SESSION['role']  = $role;
+    $_SESSION['email'] = $user['email'];
+    $_SESSION['role']  = $user['role'];
 
-    if ($role === "admin") {
+    if ($user['role'] === 'admin') {
         header("Location: admin-dashboard.php");
-    } elseif ($role === "instructor") {
+    } elseif ($user['role'] === 'instructor') {
         header("Location: instructor-dashboard.php");
     } else {
         header("Location: learner-dashboard.php");
     }
     exit();
-}
 
-else {
-    echo "Invalid email, password, or role.";
+} else {
+    echo "<script>alert('Invalid email or password'); window.location='login.html';</script>";
 }
 ?>
 

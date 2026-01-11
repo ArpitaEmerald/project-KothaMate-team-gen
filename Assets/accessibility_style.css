@@ -6,7 +6,6 @@ body {
     padding: 20px;
 }
 
-/* Header */
 header {
     text-align: center;
     margin-bottom: 30px;
@@ -21,7 +20,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Cards */
 .card {
     background-color: #fff5f5;
     border: 1px solid #ffcccc;
@@ -31,7 +29,6 @@ h2 {
     max-width: 700px;
 }
 
-/* Controls */
 .control-group {
     margin-bottom: 15px;
 }
@@ -50,7 +47,6 @@ textarea {
     border-radius: 4px;
 }
 
-/* Buttons */
 button {
     background-color: #b30000;
     color: white;
@@ -65,7 +61,6 @@ button:hover {
     background-color: #8b0000;
 }
 
-/* Navigation */
 .nav-buttons button {
     margin-bottom: 5px;
 }
@@ -75,7 +70,6 @@ button:hover {
     font-size: 14px;
 }
 
-/* Tags */
 .tag {
     background-color: #b30000;
     color: white;
@@ -86,7 +80,6 @@ button:hover {
     font-size: 13px;
 }
 
-/* Video Placeholder */
 .video-box {
     border: 2px dashed #b30000;
     padding: 30px;
@@ -95,7 +88,6 @@ button:hover {
     color: #b30000;
 }
 
-/* Preview */
 .preview {
     margin-top: 10px;
     font-style: italic;

@@ -2,13 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Lesson & Content Creation</title>
-    <link rel="stylesheet" href="Lesson_And_Content_Creation_Style.css">
+    <link rel="stylesheet" href="../Assets/Lesson_And_Content_Creation_Style.css">
 
 </head>
 
 <body>
 
-    <!-- ================= Instructor Section ================= -->
     <h1>Lesson & Content Creation</h1>
     <p>Create and organize learning materials for learners.</p>
 
@@ -17,22 +16,18 @@
     <h2>Instructor Panel</h2>
 
     <form id="lessonForm" method="post" action="process_lesson.php">
-    <!-- Lesson Title -->
     <label for="lessonTitle">Lesson Title:</label><br>
     <input type="text" id="lessonTitle" name="lessonTitle" placeholder="Enter lesson title" required>
     <span class="error"></span><br><br>
 
-    <!-- Lesson Description -->
     <label for="lessonDescription">Lesson Description:</label><br>
     <textarea id="lessonDescription" name="lessonDescription" rows="4" placeholder="Describe the lesson" required></textarea>
     <span class="error"></span><br><br>
 
-    <!-- Module / Topic -->
     <label for="moduleName">Module / Topic:</label><br>
     <input type="text" id="moduleName" name="moduleName" placeholder="e.g. Basic Communication" required>
     <span class="error"></span><br><br>
 
-    <!-- Content Type -->
     <label for="contentType">Content Type:</label><br>
     <select id="contentType" name="contentType" required>
         <option value="">-- Select Content Type --</option>
@@ -42,19 +37,16 @@
     </select>
     <span class="error"></span><br><br>
 
-    <!-- Content Link -->
     <label for="contentLink">Content Link (Video / Resource URL):</label><br>
     <input type="url" id="contentLink" name="contentLink" placeholder="https://" required>
     <span class="error"></span><br><br>
 
-    <!-- Buttons -->
     <button type="submit">Add Lesson</button>
     <button type="reset">Save as Draft</button>
 </form>
 
     <hr>
 
-    <!-- ================= Lesson Structure Section ================= -->
     <h2>Lesson Structure</h2>
 
     <h3>Module 1: Basic Communication</h3>
@@ -71,7 +63,6 @@
 
     <hr>
 
-    <!-- ================= Learner View Section ================= -->
     <h2>Learner View</h2>
     <p>Available Lessons</p>
 
@@ -90,6 +81,6 @@
         <button>View Lesson</button>
         <button>Watch Sign Language Video</button>
     </div>
-<script src="lesson_content_creation.js"></script>
+<script src="../Assets/lessson_content_creation.js"></script>
 </body>
 </html>

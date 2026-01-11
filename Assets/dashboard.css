@@ -6,7 +6,6 @@ body {
     padding: 20px;
 }
 
-/* Header */
 .header {
     text-align: center;
     margin-bottom: 30px;
@@ -20,7 +19,6 @@ body {
     font-size: 14px;
 }
 
-/* Dashboard Cards */
 .dashboard-card {
     background-color: #fff5f5;
     border: 1px solid #ffcccc;
@@ -29,7 +27,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* Titles */
 h2 {
     color: #8b0000;
     margin-bottom: 15px;
@@ -39,14 +36,12 @@ h3 {
     color: #b30000;
 }
 
-/* Card Container */
 .card-container {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
 }
 
-/* Info Cards */
 .info-card {
     background-color: #ffffff;
     border: 1px solid #ffcccc;
@@ -62,7 +57,6 @@ h3 {
     color: #b30000;
 }
 
-/* Buttons */
 .action-btn {
     background-color: #b30000;
     color: white;

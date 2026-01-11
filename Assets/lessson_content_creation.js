@@ -1,11 +1,9 @@
 (function() {
   const form = document.getElementById("lessonForm") || document.querySelector("form");
 
-  // Regex for URL validation
   const urlPattern = /^(https?:\/\/)([\w-]+\.)+[\w-]+(\/[\w\-.,@?^=%&:/~+#]*)?$/i;
 
   function showError(input, message) {
-    // Check if an error span already exists
     let errorSpan = input.nextElementSibling;
     if (!errorSpan || !errorSpan.classList.contains("error")) {
       errorSpan = document.createElement("span");
@@ -29,13 +27,11 @@
   function validateInput(input) {
     const value = input.value.trim();
 
-    // Empty check
     if (isEmpty(value)) {
       showError(input, "This field is required.");
       return false;
     }
 
-    // URL check
     if (input.type === "url") {
       if (!urlPattern.test(value)) {
         showError(input, "Please enter a valid URL (e.g., https://example.com).");
@@ -43,7 +39,6 @@
       }
     }
 
-    // Dropdown check
     if (input.tagName.toLowerCase() === "select") {
       if (value === "") {
         showError(input, "Please select an option.");
@@ -65,7 +60,6 @@
     return valid;
   }
 
-  // Real-time validation
   form.addEventListener("input", function(e) {
     const target = e.target;
     if (["lessonTitle", "lessonDescription", "moduleName", "contentType", "contentLink"].includes(target.id)) {
@@ -73,12 +67,10 @@
     }
   });
 
-  // Submit handler
   form.addEventListener("submit", function(e) {
     const ok = validateForm(form);
     if (!ok) {
       e.preventDefault();
-      // Focus first invalid field
       const firstError = form.querySelector(".error:not(:empty)");
       if (firstError) {
         firstError.previousElementSibling.focus();

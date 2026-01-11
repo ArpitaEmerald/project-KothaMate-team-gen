@@ -21,8 +21,6 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'learner') {
     <li>Track Progress</li>
     <li>View Feedback</li>
 </ul>
-
 <a href="logout.php">Logout</a>
-
 </body>
 </html>
